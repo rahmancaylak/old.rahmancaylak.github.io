@@ -1,0 +1,21 @@
+@import "colors";
+@import "variables";
+
+*
+    padding: 0
+    margin: 0
+
+body 
+    color: map-get($theme-colors, "white")
+.navbar
+    background: map-get($theme-colors, "light-background")
+    border-bottom: $navbar-border
+    padding: $p-12
+
+.header-social-media-icons
+    i
+        padding: $p-12
+        &:hover
+            background-color: #1a237e
+            color: map-get($theme-colors, "white")
+            border-radius: 50rem
