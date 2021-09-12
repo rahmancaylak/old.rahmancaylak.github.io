@@ -1,21 +1,74 @@
-@import "colors";
-@import "variables";
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap')
 *
     padding: 0
     margin: 0
 
 body 
-    color: map-get($theme-colors, "white")
+    font-family: 'Poppins', sans-serif
+
+/* Colors */
+$theme-colors : ( "primary-background" : #e0e0e0, "secondary-background": #aeaeae, "light-background" : #FFFFFF, "white": #FFF, "blue-color": #263244, "blue-color-hover" : #1a237ead)
+/* Text */
+$theme-text-weight: ("font-weight-300": 300,"font-weight-600": 600,"font-weight-700": 700)
+$font-12: 1.2rem
+/* Variables */
+$navbar-border: 1px solid rgba(0, 0, 0, 0.1)
+$p-12 : 0.75rem
+$transition-duration: .8s
+
+.fw-700
+    font-weight: map-get($theme-text-weight, font-weight-700)
+
+.fw-300
+    font-weight: map-get($theme-text-weight, font-weight-300)
+
 .navbar
-    background: map-get($theme-colors, "light-background")
     border-bottom: $navbar-border
     padding: $p-12
+    .navbar-brand
+        color: map-get($theme-colors, "blue-color")   
+        font-size: 0.90rem
+        &:hover
+            color: map-get($theme-colors, "blue-color")
+            opacity: 0.7
+            
+    .dropdown
+        .show
+            background-color: map-get($theme-colors, "blue-color")
+            border-radius: 0.6rem
+            color: map-get($theme-colors, "white")
+            transition-duration: $transition-duration
+            .dropdown-item
+                color: map-get($theme-colors, "white")
+                &:hover
+                    background-color: map-get($theme-colors, "white")
+                    color: map-get($theme-colors, "blue-color")
+    .nav-item
+        margin-left: $p-12  - 0.60
+        &:hover
+            background-color: map-get($theme-colors, "blue-color")
+            border-radius: 0.6rem
+            color: map-get($theme-colors, "white")
+            transition-duration: $transition-duration          
+        .active
+            padding: $p-12 - 0.15
+            background-color: map-get($theme-colors, "blue-color")
+            color: map-get($theme-colors, "white")
+            font-weight: map-get($theme-text-weight, font-weight-600)
+            border-radius: 0.6rem
+        a
+            padding: $p-12 - 0.15
+            color: map-get($theme-colors, "blue-color")
+        .nav-link
+            &:hover
+                color: map-get($theme-colors, "white")
 
 .header-social-media-icons
+    font-size: $font-12
     i
         padding: $p-12
         &:hover
-            background-color: #1a237e
+            background-color: map-get($theme-colors, "blue-color")
             color: map-get($theme-colors, "white")
-            border-radius: 50rem
+            border-radius: $p-12 + 45
+            transition-duration: $transition-duration
