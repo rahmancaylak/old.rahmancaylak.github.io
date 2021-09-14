@@ -95,4 +95,23 @@ body {
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
+
+.footer-social-media-icons {
+  font-size: 1.8rem;
+}
+
+.footer-social-media-icons i {
+  background-color: #263244;
+  color: white;
+  margin-left: 6px;
+  border-radius: 45.75rem;
+  padding: 0.75rem;
+}
+
+.footer-social-media-icons i:hover {
+  opacity: 0.8;
+  color: #FFF;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
 /*# sourceMappingURL=style.css.map */
