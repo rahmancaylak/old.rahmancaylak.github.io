@@ -4,6 +4,7 @@
     margin: 0
 
 body 
+    color: black
     font-family: 'Poppins', sans-serif
 
 /* Colors */
@@ -21,7 +22,7 @@ $transition-duration: .8s
 
 .fw-300
     font-weight: map-get($theme-text-weight, font-weight-300)
-
+/* Header */
 .navbar
     border-bottom: $navbar-border
     padding: $p-12
@@ -73,6 +74,23 @@ $transition-duration: .8s
             border-radius: $p-12 + 45
             transition-duration: $transition-duration
 
+/* Content */
+
+.card
+    .card-body
+        .card-subtitle
+            font-size: 0.85rem
+        .card-title
+            font-size: 1.15rem
+            a
+                color: black
+                &:hover
+                    opacity: 0.7
+        .card-text
+            font-size: 0.90rem
+
+
+/* Footer */
 .footer-social-media-icons
     font-size: $font-12 * 1.5
     i
@@ -84,4 +102,11 @@ $transition-duration: .8s
         &:hover
             opacity: 0.8
             color: map-get($theme-colors, "white")
-            transition-duration: $transition-duration   
+            transition-duration: $transition-duration
+
+
+.footer-menu-link
+    color: black
+    &:hover
+        color: map-get($theme-colors, "blue-color")
+        opacity: 0.7
