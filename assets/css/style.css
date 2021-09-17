@@ -20,6 +20,10 @@ body {
   font-weight: 300;
 }
 
+.divider {
+  margin: 3.50rem 0;
+}
+
 /* Header */
 .navbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -126,13 +130,26 @@ body {
   font-weight: 600;
 }
 
-.blog-tek-title h2 {
-  font-size: 1.25rem;
-  line-height: 1.95rem;
-}
-
 .blog-tek-content p {
   font-size: 1.15rem;
+}
+
+.blog-tek-share h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.blog-tek-share .share-social-media {
+  font-size: 1.08rem;
+  margin-left: 1rem;
+}
+
+.blog-tek-share .share-social-media i:hover {
+  background-color: #263244;
+  color: white;
+  border-radius: 45.75rem;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 /* Footer */
