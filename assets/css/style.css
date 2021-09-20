@@ -1,3 +1,6 @@
+/* Colors */
+/* Text */
+/* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap");
 * {
   padding: 0;
@@ -5,13 +8,19 @@
 }
 
 body {
-  color: black;
+  background: #1d1e24;
+  color: #FCFCFC;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Colors */
-/* Text */
-/* Variables */
+.custom-primary-background {
+  background: #1d1e24;
+}
+
+.custom-secondary-background {
+  background: #23262b;
+}
+
 .fw-700 {
   font-weight: 700;
 }
@@ -43,17 +52,11 @@ body {
 .navbar .dropdown .show {
   background-color: #263244;
   border-radius: 0.6rem;
-  color: #FFF;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-.navbar .dropdown .show .dropdown-item {
-  color: #FFF;
-}
-
 .navbar .dropdown .show .dropdown-item:hover {
-  background-color: #FFF;
   color: #263244;
 }
 
@@ -64,7 +67,6 @@ body {
 .navbar .nav-item:hover {
   background-color: #263244;
   border-radius: 0.6rem;
-  color: #FFF;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
@@ -72,7 +74,6 @@ body {
 .navbar .nav-item .active {
   padding: 0.6rem;
   background-color: #263244;
-  color: #FFF;
   font-weight: 600;
   border-radius: 0.6rem;
 }
@@ -80,10 +81,6 @@ body {
 .navbar .nav-item a {
   padding: 0.6rem;
   color: #263244;
-}
-
-.navbar .nav-item .nav-link:hover {
-  color: #FFF;
 }
 
 .header-social-media-icons {
@@ -96,7 +93,6 @@ body {
 
 .header-social-media-icons i:hover {
   background-color: #263244;
-  color: #FFF;
   border-radius: 45.75rem;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
@@ -152,6 +148,23 @@ body {
           transition-duration: 0.8s;
 }
 
+/* About Me */
+.aboutMe .aboutMe-right .surname {
+  color: #ff214f;
+}
+
+.aboutMe .aboutMe-left li a {
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.aboutMe-what-im-doing .card {
+  border-radius: 1.5rem;
+  width: 30rem;
+}
+
 /* Footer */
 .footer-social-media-icons {
   font-size: 1.8rem;
@@ -167,7 +180,6 @@ body {
 
 .footer-social-media-icons i:hover {
   opacity: 0.8;
-  color: #FFF;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }

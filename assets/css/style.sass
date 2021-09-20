@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap')
-*
-    padding: 0
-    margin: 0
-
-body 
-    color: black
-    font-family: 'Poppins', sans-serif
 
 /* Colors */
-$theme-colors : ( "primary-background" : #e0e0e0, "secondary-background": #aeaeae, "light-background" : #FFFFFF, "white": #FFF, "blue-color": #263244, "blue-color-hover" : #1a237ead)
+$theme-colors : ( "primary-background" : #1d1e24, "secondary-background": #23262b, "border-color" : #33363D, "custom-text-light": #FCFCFC, "blue-color": #263244, "blue-color-hover" : #1a237ead, "title-bottom-color":#ff214f)
+    
 /* Text */
 $theme-text-weight: ("font-weight-300": 300,"font-weight-600": 600,"font-weight-700": 700)
 $font-12: 1.2rem
@@ -17,9 +10,23 @@ $navbar-border: 1px solid rgba(0, 0, 0, 0.1)
 $p-12 : 0.75rem
 $transition-duration: .8s
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap')
+*
+    padding: 0
+    margin: 0
+
+body 
+    background: map-get($theme-colors, primary-background)
+    color: map-get($theme-colors, custom-text-light)
+    font-family: 'Poppins', sans-serif
+
+.custom-primary-background
+    background: map-get($theme-colors, primary-background)
+.custom-secondary-background
+    background: map-get($theme-colors, secondary-background)
 .fw-700
     font-weight: map-get($theme-text-weight, font-weight-700)
-
 .fw-300
     font-weight: map-get($theme-text-weight, font-weight-300)
 .divider
@@ -117,6 +124,23 @@ $transition-duration: .8s
                 border-radius: $p-12 + 45
                 transition-duration: $transition-duration
 
+/* About Me */
+.aboutMe
+    .aboutMe-right
+        .surname
+            color: map-get($theme-colors, "title-bottom-color")
+    .aboutMe-left
+        li
+            a
+                color: #fff
+                font-size: 24px
+                transition: all ease .3s
+
+.aboutMe-what-im-doing
+    .card
+        border-radius: 1.5rem
+        width: 30rem
+    
 /* Footer */
 
 .footer-social-media-icons
