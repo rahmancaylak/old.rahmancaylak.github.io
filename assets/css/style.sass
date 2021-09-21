@@ -1,12 +1,12 @@
 
 /* Colors */
-$theme-colors : ( "primary-background" : #1d1e24, "secondary-background": #23262b, "border-color" : #33363D, "custom-text-light": #FCFCFC, "blue-color": #263244, "blue-color-hover" : #1a237ead, "title-bottom-color":#ff214f)
+$theme-colors : ( "primary-background" : #1d1e24, "secondary-background": #23262b, "border-color" : #33363D, "custom-text-light": #FCFCFC, "custom-text-dark": #AEB0B8, "blue-color": #263244, "title-bottom-color":#ff214f)
     
 /* Text */
 $theme-text-weight: ("font-weight-300": 300,"font-weight-600": 600,"font-weight-700": 700)
 $font-12: 1.2rem
 /* Variables */
-$navbar-border: 1px solid rgba(0, 0, 0, 0.1)
+$navbar-border: 1px solid map-get($theme-colors, "border-color")
 $p-12 : 0.75rem
 $transition-duration: .8s
 
@@ -31,73 +31,105 @@ body
     font-weight: map-get($theme-text-weight, font-weight-300)
 .divider
     margin: 3.50rem 0
-/* Header */
 
+/* Header */
 .navbar
     border-bottom: $navbar-border
     padding: $p-12
     .navbar-brand
-        color: map-get($theme-colors, "blue-color")   
-        font-size: 0.90rem
+        color: map-get($theme-colors, "custom-text-dark")
+        font-size: 1rem
         &:hover
-            color: map-get($theme-colors, "blue-color")
-            opacity: 0.7
-            
-    .dropdown
-        .show
-            background-color: map-get($theme-colors, "blue-color")
-            border-radius: 0.6rem
-            color: map-get($theme-colors, "white")
-            transition-duration: $transition-duration
-            .dropdown-item
-                color: map-get($theme-colors, "white")
-                &:hover
-                    background-color: map-get($theme-colors, "white")
-                    color: map-get($theme-colors, "blue-color")
-    .nav-item
-        margin-left: $p-12  - 0.60
-        &:hover
-            background-color: map-get($theme-colors, "blue-color")
-            border-radius: 0.6rem
-            color: map-get($theme-colors, "white")
-            transition-duration: $transition-duration          
-        .active
-            padding: $p-12 - 0.15
-            background-color: map-get($theme-colors, "blue-color")
-            color: map-get($theme-colors, "white")
-            font-weight: map-get($theme-text-weight, font-weight-600)
-            border-radius: 0.6rem
+            color: map-get($theme-colors, "custom-text-light")
+    .nav-item    
         a
-            padding: $p-12 - 0.15
-            color: map-get($theme-colors, "blue-color")
+            color: map-get($theme-colors, "custom-text-light")
         .nav-link
+            &::after
+                content: ''
+                display: block
+                width: 0
+                height: 2px
+                background: #fff
+                transition: width .3s
             &:hover
-                color: map-get($theme-colors, "white")
+                &::after
+                    width: 100%
+                    transition: width .3s
 
-.header-social-media-icons
-    font-size: $font-12
-    i
-        padding: $p-12
-        &:hover
-            background-color: map-get($theme-colors, "blue-color")
-            color: map-get($theme-colors, "white")
-            border-radius: $p-12 + 45
-            transition-duration: $transition-duration
+/* Heroes */
+.heroes
+    .heroes-right
+        .surname
+            color: map-get($theme-colors, "title-bottom-color")
+
+    .heroes-left
+        .nav
+            display: block
+            padding: 20px
+            position: absolute
+            top: 22%
+            bottom: 0
+        li
+            a
+                color: #fff
+                font-size: 24px
+                transition: all ease .3s
+        .social-media-icons
+            .fa-instagram:hover
+                color: transparent
+                background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                background-clip: text
+                -webkit-background-clip: text
+            .fa-linkedin:hover
+                color: #0077b5
+            .fa-twitter:hover
+                color: #55acee
+            .fa-github:hover
+                color: #fff
+                opacity: 0.7
+
+    .scroll-down
+        color: #fff
+        font-size: 23px
+        opacity: .7
+        transition: all .3s ease
+        &:focus, &::after, &:hover
+            opacity: 1
+    .animateArrow
+        border-radius: 50%
+        animation: animateArrow 2s infinite
+        @keyframes animateArrow
+            0%,
+            100%
+                transform: translateY(0)
+            40%
+                transform: translateY(-20px)
+
+/* About Me */
+.aboutMe
+    .card
+        border-radius: 1.5rem
+        width: 30rem
+        border: 1px solid map-get($theme-colors, "border-color")
 
 /* Content */
-
-.card
-    .card-body
-        .card-subtitle
-            font-size: 0.85rem
-        .card-title
-            font-size: 1.15rem
-            a
-                color: black
-                &:hover
-                    opacity: 0.7
-        .card-text
-            font-size: 0.90rem
+.blog
+    .card
+        .card-body
+            .card-subtitle
+                font-size: 0.85rem
+            .card-title
+                font-size: 1.15rem
+                a
+                    color: black
+                    &:hover
+                        opacity: 0.7
+            .card-text
+                font-size: 0.90rem
 
 /* Blog Tek Content */
 
@@ -123,39 +155,8 @@ body
                 color: white
                 border-radius: $p-12 + 45
                 transition-duration: $transition-duration
-
-/* About Me */
-.aboutMe
-    .aboutMe-right
-        .surname
-            color: map-get($theme-colors, "title-bottom-color")
-    .aboutMe-left
-        li
-            a
-                color: #fff
-                font-size: 24px
-                transition: all ease .3s
-
-.aboutMe-what-im-doing
-    .card
-        border-radius: 1.5rem
-        width: 30rem
     
 /* Footer */
-
-.footer-social-media-icons
-    font-size: $font-12 * 1.5
-    i
-        background-color: map-get($theme-colors, "blue-color")
-        color: white
-        margin-left: 6px
-        border-radius: $p-12 + 45
-        padding: $p-12
-        &:hover
-            opacity: 0.8
-            color: map-get($theme-colors, "white")
-            transition-duration: $transition-duration
-
 
 .footer-menu-link
     color: black

@@ -35,87 +35,147 @@ body {
 
 /* Header */
 .navbar {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #33363D;
   padding: 0.75rem;
 }
 
 .navbar .navbar-brand {
-  color: #263244;
-  font-size: 0.90rem;
+  color: #AEB0B8;
+  font-size: 1rem;
 }
 
 .navbar .navbar-brand:hover {
-  color: #263244;
-  opacity: 0.7;
-}
-
-.navbar .dropdown .show {
-  background-color: #263244;
-  border-radius: 0.6rem;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.navbar .dropdown .show .dropdown-item:hover {
-  color: #263244;
-}
-
-.navbar .nav-item {
-  margin-left: 0.15rem;
-}
-
-.navbar .nav-item:hover {
-  background-color: #263244;
-  border-radius: 0.6rem;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.navbar .nav-item .active {
-  padding: 0.6rem;
-  background-color: #263244;
-  font-weight: 600;
-  border-radius: 0.6rem;
+  color: #FCFCFC;
 }
 
 .navbar .nav-item a {
-  padding: 0.6rem;
-  color: #263244;
+  color: #FCFCFC;
 }
 
-.header-social-media-icons {
-  font-size: 1.2rem;
+.navbar .nav-item .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
-.header-social-media-icons i {
-  padding: 0.75rem;
+.navbar .nav-item .nav-link:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
-.header-social-media-icons i:hover {
-  background-color: #263244;
-  border-radius: 45.75rem;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+/* Heroes */
+.heroes .heroes-right .surname {
+  color: #ff214f;
 }
 
-/* Content */
-.card .card-body .card-subtitle {
-  font-size: 0.85rem;
+.heroes .heroes-left .nav {
+  display: block;
+  padding: 20px;
+  position: absolute;
+  top: 22%;
+  bottom: 0;
 }
 
-.card .card-body .card-title {
-  font-size: 1.15rem;
+.heroes .heroes-left li a {
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
-.card .card-body .card-title a {
-  color: black;
+.heroes .heroes-left .social-media-icons .fa-instagram:hover {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.card .card-body .card-title a:hover {
+.heroes .heroes-left .social-media-icons .fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.heroes .heroes-left .social-media-icons .fa-twitter:hover {
+  color: #55acee;
+}
+
+.heroes .heroes-left .social-media-icons .fa-github:hover {
+  color: #fff;
   opacity: 0.7;
 }
 
-.card .card-body .card-text {
+.heroes .scroll-down {
+  color: #fff;
+  font-size: 23px;
+  opacity: .7;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.heroes .scroll-down:focus, .heroes .scroll-down::after, .heroes .scroll-down:hover {
+  opacity: 1;
+}
+
+.heroes .animateArrow {
+  border-radius: 50%;
+  -webkit-animation: animateArrow 2s infinite;
+          animation: animateArrow 2s infinite;
+}
+
+@-webkit-keyframes animateArrow {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes animateArrow {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+/* About Me */
+.aboutMe .card {
+  border-radius: 1.5rem;
+  width: 30rem;
+  border: 1px solid #33363D;
+}
+
+/* Content */
+.blog .card .card-body .card-subtitle {
+  font-size: 0.85rem;
+}
+
+.blog .card .card-body .card-title {
+  font-size: 1.15rem;
+}
+
+.blog .card .card-body .card-title a {
+  color: black;
+}
+
+.blog .card .card-body .card-title a:hover {
+  opacity: 0.7;
+}
+
+.blog .card .card-body .card-text {
   font-size: 0.90rem;
 }
 
@@ -148,42 +208,7 @@ body {
           transition-duration: 0.8s;
 }
 
-/* About Me */
-.aboutMe .aboutMe-right .surname {
-  color: #ff214f;
-}
-
-.aboutMe .aboutMe-left li a {
-  color: #fff;
-  font-size: 24px;
-  -webkit-transition: all ease .3s;
-  transition: all ease .3s;
-}
-
-.aboutMe-what-im-doing .card {
-  border-radius: 1.5rem;
-  width: 30rem;
-}
-
 /* Footer */
-.footer-social-media-icons {
-  font-size: 1.8rem;
-}
-
-.footer-social-media-icons i {
-  background-color: #263244;
-  color: white;
-  margin-left: 6px;
-  border-radius: 45.75rem;
-  padding: 0.75rem;
-}
-
-.footer-social-media-icons i:hover {
-  opacity: 0.8;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
 .footer-menu-link {
   color: black;
 }

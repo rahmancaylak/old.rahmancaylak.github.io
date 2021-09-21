@@ -26,10 +26,9 @@
 </head>
 
 <body>
-    <header class="mb-5">
+    <header class="mb-5 mt-3">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img class="rounded-circle mx-2 border border-2 border-dark" width="55px" height="55px" src="assets/img/rahmancaylak.jpg">
                 <a class="navbar-brand text-uppercase fw-700" href="/">Rahman Çaylak</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,37 +36,17 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0 justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Ana Sayfa</a>
+                            <a class="nav-link" href="/">Ana Sayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/hakkımda.html">Hakkımda</a>
+                            <a class="nav-link" href="#projects">Projelerim</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/iletisim.html">İletişim</a>
+                            <a class="nav-link" href="#blog">Blog</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Blog
-                    </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item text-blue" href="blog.html">Blog Liste</a></li>
-                                <li><a class="dropdown-item text-blue" href="blog-tek.html">Blog Detay</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link nav-item" href="#contact">İletişim</a>
                         </li>
-                        <ul class="nav my-auto d-flex flex-nowrap">
-                            <li>
-                                <a href="https://github.com/rahmancaylak" class="text-decoration-none text-dark header-social-media-icons"><i class="fab fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/rahman-caylak/" class="text-decoration-none text-dark header-social-media-icons"><i class="fab fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/rahmancaylak" class="text-decoration-none text-dark header-social-media-icons"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/rahmancaylak" class="text-decoration-none text-dark header-social-media-icons"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
                     </ul>
                     <form class="d-flex">
                         <span class="input-group-text bg-transparent border-0" id="basic-addon1" style="color: #ccc; z-index: 5;"><i class="fa fa-search"></i></span>
@@ -84,7 +63,212 @@
         </nav>
     </header>
     <main>
-        <section class="blog">
+        <!-- Heroes -->
+        <section class="heroes mt-5">
+            <div class="heroes-left">
+                <ul class="nav">
+                    <li class="mb-4 social-media-icons">
+                        <a href="https://github.com/rahmancaylak">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="mb-4 social-media-icons">
+                        <a href="https://www.linkedin.com/in/rahman-caylak/">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="mb-4 social-media-icons">
+                        <a href="https://twitter.com/rahmancaylak">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-icons">
+                        <a href="https://instagram.com/rahmancaylak">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="heroes-right">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <img alt="Rahman Çaylak" src="assets/img/rahmancaylak.jpg" class="home-profile-photo rounded-circle" style="width: 18rem; height: 16rem;">
+                        <h1 class="text-uppercase text-center mt-3">Rahman <span class="surname">Çaylak</span></h1>
+                        <span class="heroes-typewrite text-center" data-period="2000" data-type='[ "Jr. Front-end Developer","Jr. Back-end Developer"]'></span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="#about" class="mt-4 scroll-down animateArrow selected d-flex justify-content-center text-decoration-none">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </section>
+        <!-- About Me -->
+        <section class="aboutMe mt-5 p-5 text-light custom-secondary-background" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2 class="text-center">About Me</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quasi dignissimos consequuntur odit dolore nihil itaque quas ipsa earum laborum vero voluptas error ducimus possimus totam animi provident iusto a sit ipsam molestiae,
+                        tempore iste nostrum debitis! In dolore nam eum inventore earum libero error, cum incidunt maiores obcaecati quas quam molestias tempore amet. Aut non quidem officiis aspernatur enim, nihil vitae qui ipsam ex nulla, consequuntur
+                        aliquam natus harum optio sint dolorem corrupti a possimus doloremque, illo iure consequatur ea! At delectus odio illum id beatae perferendis facere distinctio fugit natus error, odit ullam architecto exercitationem omnis iure
+                        facilis!
+                    </p>
+                    <div class="card col-6 p-3 mx-3 mt-5 shadow custom-secondary-background">
+                        <img src="http://netgon.net/artstyles/v-card3/assets/icons/dark/icon-design.svg" class="card-img-top" alt="..." height="40rem">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-light">Web Design</h5>
+                            <p class="card-text text-muted">The most modern and high-quality design made at a professional level.</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 p-3 mx-3 mt-5 shadow custom-secondary-background">
+                        <img src="http://netgon.net/artstyles/v-card3/assets/icons/dark/icon-dev.svg" class="card-img-top" alt="..." height="40rem">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text text-muted">High-quality development of sites at the professional level.</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 p-3 mx-3 mt-5 shadow custom-secondary-background">
+                        <img src="http://netgon.net/artstyles/v-card3/assets/icons/dark/icon-app.svg" class="card-img-top" alt="..." height="40rem">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mobile Apps</h5>
+                            <p class="card-text text-muted">Professional development of applications for iOS and Android</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 p-3 mx-3 mt-5 shadow custom-secondary-background">
+                        <img src="http://netgon.net/artstyles/v-card3/assets/icons/dark/icon-photo.svg" class="card-img-top" alt="..." height="40rem">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Photography</h5>
+                            <p class="card-text text-muted">I make high-quality photos of any category at a professional level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="row text-center mt-5"></div>
+                <h1 class="display-3 fw-bold text-capitalize">Latest Work</h1>
+                <div class="heading-line">
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores pariatur voluptatem perferendis rerum officia, ipsam excepturi unde voluptates alias reiciendis, rem quisquam nesciunt eum animi error quasi illo beatae labore.
+                    </p>
+                </div>
+                <!-- Filter -->
+                <div class="row mt-5 mb-4 g-3 text-center">
+                    <div class="col-md-12">
+                        <button class="btn btn-outline-primary" type="button">All</button>
+                        <button class="btn btn-outline-primary" type="button">Websites</button>
+                        <button class="btn btn-outline-primary" type="button">Design</button>
+                        <button class="btn btn-outline-primary" type="button">Mockup</button>
+                    </div>
+                </div>
+                <!-- Portfolio Items -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 1</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 2</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 3</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 4</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 5</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 6</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-7.jpg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 7</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-8.jpg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 8</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-box shadow">
+                            <img src="assets/img/portfolio/portfolio-9.jpg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 9</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="blog" id="blog">
             <div class="container">
                 <h1 class="text-center mb-5">Son Yazılarım</h1>
                 <div class="row g-5">
@@ -188,6 +372,8 @@
     </footer>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Typescript JS -->
+    <script src="assets/js/typescript.js"></script>
 </body>
 
 </html>
