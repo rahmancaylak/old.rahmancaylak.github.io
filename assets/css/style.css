@@ -29,8 +29,8 @@ body {
   font-weight: 300;
 }
 
-.divider {
-  margin: 3.50rem 0;
+.hr-divider {
+  border: 1px solid #33363D;
 }
 
 /* Header */
@@ -158,7 +158,82 @@ body {
   border: 1px solid #33363D;
 }
 
-/* Content */
+/* Portfolio */
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio .portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+
+.portfolio .portfolio-box img {
+  width: 100%;
+}
+
+.portfolio .portfolio-box .portfolio-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.portfolio .portfolio-box .portfolio-info .caption {
+  text-align: center;
+}
+
+.portfolio .portfolio-box .portfolio-info h4 {
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-box:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+.portfolio .portfolio-box:hover .portfolio-info {
+  background: #1d1e24;
+  opacity: 0.7;
+  visibility: visible;
+  z-index: 9999;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+/* Blog */
+.blog .card {
+  border-radius: 1.5rem;
+  border: 1px solid #33363D;
+}
+
+.blog .card img {
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.blog .card img:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.9s all;
+  transition: 0.9s all;
+}
+
 .blog .card .card-body .card-subtitle {
   font-size: 0.85rem;
 }
@@ -177,6 +252,11 @@ body {
 
 .blog .card .card-body .card-text {
   font-size: 0.90rem;
+}
+
+.blog .more-blog {
+  border-radius: 1.5rem;
+  border: 1px solid #33363D;
 }
 
 /* Blog Tek Content */
@@ -209,12 +289,16 @@ body {
 }
 
 /* Footer */
-.footer-menu-link {
-  color: black;
+.footer .nav a {
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
 }
 
-.footer-menu-link:hover {
-  color: #263244;
-  opacity: 0.7;
+.footer .nav .nav-item a {
+  color: #AEB0B8;
+}
+
+.footer .nav .nav-item a:hover {
+  color: #FCFCFC;
 }
 /*# sourceMappingURL=style.css.map */
