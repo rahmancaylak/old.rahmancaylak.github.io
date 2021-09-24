@@ -13,6 +13,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.custom-border-red-color {
+  border: 1px solid #ff214f;
+}
+
 .custom-primary-background {
   background: #1d1e24;
 }
@@ -271,33 +275,19 @@ body {
   border: 1px solid #33363D;
 }
 
-/* Blog Tek Content */
-.blog-tek-title h1 {
-  margin-top: 40px;
+/* Blog Single Content */
+.blog-single .blog-single-title h1 {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.blog-tek-content p {
-  font-size: 1.15rem;
+.blog-single .blog-single-content p {
+  font-size: 1.05rem;
 }
 
-.blog-tek-share h2 {
+.blog-single .blog-single-share p {
   font-size: 0.95rem;
   font-weight: 600;
-}
-
-.blog-tek-share .share-social-media {
-  font-size: 1.08rem;
-  margin-left: 1rem;
-}
-
-.blog-tek-share .share-social-media i:hover {
-  background-color: #263244;
-  color: white;
-  border-radius: 45.75rem;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
 }
 
 /* Contact */
