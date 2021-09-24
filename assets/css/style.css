@@ -69,6 +69,10 @@ body {
 }
 
 /* Heroes */
+.heroes {
+  height: 80vh;
+}
+
 .heroes .heroes-right .surname {
   color: #ff214f;
 }
@@ -286,6 +290,43 @@ body {
   border-radius: 45.75rem;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
+}
+
+/* Contact */
+.contact input.form-control, .contact textarea.form-control {
+  padding: 0.875rem 1.375rem 0.8125rem;
+  background: #2E2F36;
+  border-radius: 1.5rem;
+  border: 1px solid #33363D;
+  color: white;
+}
+
+.contact input.form-control:focus, .contact textarea.form-control:focus {
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+}
+
+.contact input.form-control::-moz-selection, .contact textarea.form-control::-moz-selection {
+  background: #ff214f;
+}
+
+.contact input.form-control::selection, .contact textarea.form-control::selection {
+  background: #ff214f;
+}
+
+.contact .contact-submit {
+  background: #23262b;
+  color: #FCFCFC;
+}
+
+.contact .contact-submit:hover {
+  border-radius: 1.5rem;
+  border: 1px solid #33363D;
+  color: #ff214f;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 /* Footer */

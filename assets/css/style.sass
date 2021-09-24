@@ -1,6 +1,6 @@
 
 /* Colors */
-$theme-colors : ( "primary-background" : #1d1e24, "secondary-background": #23262b, "border-color" : #33363D, "custom-text-light": #FCFCFC, "custom-text-dark": #AEB0B8, "blue-color": #263244, "title-bottom-color":#ff214f)
+$theme-colors : ( "primary-background" : #1d1e24, "secondary-background": #23262b, "border-color" : #33363D, "custom-form-background": #2E2F36, "custom-text-light": #FCFCFC, "custom-text-dark": #AEB0B8, "blue-color": #263244, "title-bottom-color":#ff214f)
     
 /* Text */
 $theme-text-weight: ("font-weight-300": 300,"font-weight-600": 600,"font-weight-700": 700)
@@ -59,6 +59,7 @@ body
 
 /* Heroes */
 .heroes
+    height: 80vh
     .heroes-right
         .surname
             color: map-get($theme-colors, "title-bottom-color")
@@ -181,7 +182,7 @@ body
                 font-size: 0.90rem
     .more-blog
         border-radius: 1.5rem
-        border: 1px solid map-get($theme-colors, "border-color")    
+        border: 1px solid map-get($theme-colors, "border-color")
 
 /* Blog Tek Content */
 
@@ -208,8 +209,31 @@ body
                 border-radius: $p-12 + 45
                 transition-duration: $transition-duration
     
-/* Footer */
+/* Contact */
+.contact
+    input.form-control, textarea.form-control
+        padding: 0.875rem 1.375rem 0.8125rem
+        background: map-get($theme-colors, "custom-form-background")
+        border-radius: 1.5rem
+        border: 1px solid map-get($theme-colors, "border-color")
+        color: white
+        &:focus
+            border-color: none
+            box-shadow: none
+            outline: 0 none
+        &::selection
+            background: map-get($theme-colors, "title-bottom-color")
+            
+    .contact-submit
+        background: map-get($theme-colors, "secondary-background")
+        color: map-get($theme-colors, "custom-text-light")
+        &:hover
+            border-radius: 1.5rem
+            border: 1px solid map-get($theme-colors, "border-color")
+            color: map-get($theme-colors, "title-bottom-color")
+            transition: 1s all
 
+/* Footer */
 .footer
     .nav
         a
