@@ -187,6 +187,17 @@ body
     .more-blog
         border-radius: 1.5rem
         border: 1px solid map-get($theme-colors, "border-color")
+    .blog-pagination
+        .page-link
+            border: 1px solid map-get($theme-colors, "border-color")
+            &:hover
+                border-radius: 0.2rem
+                border: 1px solid map-get($theme-colors, "title-bottom-color")
+                background: map-get($theme-colors, "primary-background")
+        .page-item.active .page-link
+            border-radius: 0.2rem
+            border: 1px solid map-get($theme-colors, "title-bottom-color")
+            background-color: map-get($theme-colors, "primary-background")
 
 /* Blog Single Content */
 .blog-single

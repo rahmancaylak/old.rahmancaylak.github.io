@@ -275,6 +275,22 @@ body {
   border: 1px solid #33363D;
 }
 
+.blog .blog-pagination .page-link {
+  border: 1px solid #33363D;
+}
+
+.blog .blog-pagination .page-link:hover {
+  border-radius: 0.2rem;
+  border: 1px solid #ff214f;
+  background: #1d1e24;
+}
+
+.blog .blog-pagination .page-item.active .page-link {
+  border-radius: 0.2rem;
+  border: 1px solid #ff214f;
+  background-color: #1d1e24;
+}
+
 /* Blog Single Content */
 .blog-single .blog-single-title h1 {
   font-size: 2rem;
