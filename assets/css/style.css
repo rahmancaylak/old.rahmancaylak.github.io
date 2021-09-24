@@ -70,7 +70,7 @@ body {
 
 /* Heroes */
 .heroes {
-  height: 80vh;
+  height: 75vh;
 }
 
 .heroes .heroes-right .surname {
@@ -163,6 +163,14 @@ body {
 }
 
 /* Portfolio */
+.portfolio .portfolio-filter {
+  display: none;
+}
+
+.portfolio .show {
+  display: block;
+}
+
 .portfolio button {
   text-transform: capitalize;
 }
